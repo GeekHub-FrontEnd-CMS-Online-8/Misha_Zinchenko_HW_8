@@ -4,14 +4,11 @@ body{
 }
 .content{
   margin: 0 auto;
-  @media screen and (min-width: 480px){
-      width: 480px;
-  }
+  width: 480px;
   @media screen and (min-width: 940px){
       width: 940px;
   }
 }
-
 a{
   text-decoration: none;
 }
@@ -35,12 +32,15 @@ a{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.services_text_2{
+.services_text{
+  width: 555px;
+}
+.s_icon{
+  @media screen and (min-width:480px){
+    margin-left: 100px;
+  }
+}
 
-}
-.services_text_1{
-  
-}
 .s_t_1{
   font-family: "Brandon Grotesque Light";
   font-weight: 300;
@@ -57,6 +57,7 @@ a{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 100px 0 94px 0;
 }
 .sk_block{
@@ -73,7 +74,9 @@ a{
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sk_text{
   width: 284px;
@@ -97,3 +100,130 @@ a{
   letter-spacing: -0.45px;
   margin-top: -10px;
 }
+// -------------LINK------------------------
+.block_link{
+  padding: 0 0 10px 0;
+  @media screen and (min-width: 940px){
+    padding: 60px 0 60px 0;
+  }
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{margin-top: 15px}
+  @media screen and (min-width: 940px){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  } 
+}
+// -------------AMAZING------------------------
+.amazing{
+  background: #111111;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: #ffffff;
+  h2{
+    color: #ffffff;
+    font-family: "Brandon Grotesque";
+    font-size: 60px;
+    font-weight: 300;
+    .a_t_1{
+      font-family: "Brandon Grotesque Regular";
+      font-weight: 400;
+      letter-spacing: -1.5px;
+    }
+    .a_t_2{
+      font-family: "Brandon Grotesque Bold";
+      font-weight: 700;
+      letter-spacing: -1.5px;
+    }
+  h4{
+    color: #777777;
+    font-family: "Brandon Grotesque";
+    font-size: 22px;
+    font-weight: 400;
+  }
+  p{
+    color: #ebebeb;
+    font-family: "Brandon Grotesque";
+    font-size: 20px;
+    font-weight: 400;
+  }
+  }
+  @media screen and (min-width:940px){
+    padding: 100px 0 100px 0;
+  }
+}
+.amazing_people{
+  @media screen and (min-width: 940px){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.people{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  .radius_2{
+    width: 220px;
+    height: 221px;
+    border: 7px solid #ffffff;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+  }
+  .p_link{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .p_l_icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 41px;
+      height: 41px;
+      border: 3px solid #ffffff;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+    }
+  }
+}
+// -------------CONTACT------------------------
+.contact{
+  background: #7690c5;
+}
+.contact_block{
+  padding: 15px 0 15px 0;
+  @media screen and (min-width:940px){
+    padding: 100px 0 100px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------FOOTER-------------------------
+// footer{
+//   background: #7690c5;
+//   text-align: center;
+//   color: #ffffff;
+//   font-family: "Brandon Grotesque";
+//   font-size: 16px;
+//   font-weight: 500;
+//   line-height: 22px;
+// }
