@@ -1,7 +1,3 @@
-// @font-face {
-//   font-family: ; 
-//   src: url();
-//  }
 body{
   margin: 0px;
   padding: 0px;
@@ -104,7 +100,67 @@ a{
   letter-spacing: -0.45px;
   margin-top: -10px;
 }
-// -------------LINK------------------------
+
+// -------------CLIENTS------------------------
+.clients{
+  background-color: #fafafa;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  h2{
+    color: #222222;
+    font-family: "Brandon Grotesque";
+    font-size: 60px;
+    font-weight: 300;
+  }
+  p{
+    color: #777777;
+    font-family: "Brandon Grotesque";
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -40px;
+  }
+  .clients_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:940px){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .clients_2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    @media screen and (min-width:940px){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .block{
+    width: 662px;
+    height: 174px;
+    border: 1px solid #e8e8e8;
+    background: #ffffff;
+    p{
+      padding-top: 41px;
+    }
+  }
+  @media screen and (min-width:940px){
+    padding: 100px 0 100px 0;
+  }
+}
+.radius_3{
+  width: 221px;
+  height: 221px;
+  border: 7px solid #ffffff;
+  background-color: #111111;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+}
+
+// -------------LINK---------------------------
 .block_link{
   padding: 0 0 10px 0;
   @media screen and (min-width: 940px){
