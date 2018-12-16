@@ -1,3 +1,7 @@
+// @font-face {
+//   font-family: ; 
+//   src: url();
+//  }
 body{
   margin: 0px;
   padding: 0px;
@@ -197,33 +201,86 @@ a{
 // -------------CONTACT------------------------
 .contact{
   background: #7690c5;
+  color: #ffffff;
 }
 .contact_block{
   padding: 15px 0 15px 0;
-  @media screen and (min-width:940px){
+  @media screen and (min-width: 940px){
     padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contact__text{
+  h2{
+    font-family: "Brandon Grotesque";
+    font-size: 60px;
+    font-weight: 700;
+    .1{
+      font-weight: 300;
+      letter-spacing: -1.5px;
+    }
+    .2{
+      font-weight: 700;
+      letter-spacing: -1.5px;
+    }
+  }
+  p{
+    font-family: "Brandon Grotesque";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+  }
+}
+.contact_column{
+  width: 420px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+.cc{
+  display: flex;
+  flex-direction: row;
+  width: 184px;
+  height: 27px;
+  margin-top: 50px;
+  span{
+    font-family: "Brandon Grotesque";
+    font-size: 17px;
+    font-weight: 400;
+    padding: 5px 10px;
+  }
+}
+}
+.contact__form {
+  width: 470px;
+  display: block;
+  padding-top: 65px;
+  .contact__form_name {
+    width: 450px;
+    height: 55px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .contact__form_message {
+    width: 450px;
+    height: 210px;
+    padding-left: 25px;
+    padding-top: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
 // -------------FOOTER-------------------------
-// footer{
-//   background: #7690c5;
-//   text-align: center;
-//   color: #ffffff;
-//   font-family: "Brandon Grotesque";
-//   font-size: 16px;
-//   font-weight: 500;
-//   line-height: 22px;
-// }
+footer{
+  background: #7690c5;
+  height: 80px; 
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid #87a0d2;
+  padding-top: 30px;
+}
